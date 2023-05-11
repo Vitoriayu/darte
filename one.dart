@@ -9,5 +9,9 @@ void main() {
   print(codigo.length);
   codigo[61] = "brasilia";
   print(codigo.length);
-
+  codigo.remove(19);
+  print(codigo.length);
+  print(codigo.values);
+  print(codigo.containsKey(11));
+  print(codigo.containsValue("Jardim Alegre"));
 }
