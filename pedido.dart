@@ -24,11 +24,11 @@ class Pedido {
 }
 
 void main() {
-  Pedido pedido1 = Pedido(001, "João", ["Camiseta", "Calça", "Tênis"]);
-  pedido1.adicionarItem("Meia");
+  Pedido pedido1 = Pedido(001, "Vitória", ["Maça", "Abacaxi", "Melancia"]);
+  pedido1.adicionarItem("Morango");
   pedido1.exibirPedido();
 
-  Pedido pedido2 = Pedido(002, "Maria", ["Blusa", "Saia"]);
-  pedido2.removerItem("Saia");
+  Pedido pedido2 = Pedido(002, "Sophia", ["Laranja", "Romã"]);
+  pedido2.removerItem("Laranja");
   pedido2.exibirPedido();
 }
