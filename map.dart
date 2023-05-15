@@ -23,6 +23,6 @@ void main(){
   print(aluno.remove(8));
   print(aluno[8]);
   print(aluno.length);
-  print(aluno.containsValue("Alexia"));
+  print(aluno.containsValue("Vitoria"));
 
 }
