@@ -1,12 +1,16 @@
-void main() {
-  ConversorTemperatura temperatura1 = ConversorTemperatura();
-  temperatura1.celsiusToFanhrenheit();
-}
+import 'dart:convert';
 
 class ConversorTemperatura {
-  double Celsius = 25.7;
-  void celsiusToFanhrenheit() {
-    var Fahrenheit = (Celsius * 9 / 5) + 32;
-    print(Fahrenheit);
+  double celsiusToFahrenheit(double celsius) {
+    return (celsius * 9 / 5) + 32;
   }
+}
+
+void main() {
+  double temperaturaCelsius = 25;
+  ConversorTemperatura conversor = ConversorTemperatura();
+  double temperaturaFanhrenheit =
+      conversor.celsiusToFahrenheit(temperaturaCelsius);
+  print(
+      '$temperaturaCelsius graus Celsius = $temperaturaFanhrenheit graus Fanhrenheit');
 }
